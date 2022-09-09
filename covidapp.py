@@ -1,6 +1,7 @@
 from flask import Flask,render_template, request
 import requests
 import json
+import os
 
 app = Flask(__name__)
 
@@ -24,4 +25,8 @@ def mycovidapp():
         data= None
         return render_template("covid19.html",data=data)
 
-app.run()
+port = int(os.environ.get("PORT",5000))
+
+
+if __name__=="__main__":
+    app.run(port = port)
