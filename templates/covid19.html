@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>covid</title><!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"><!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>COVID APP</title>
+</head>
+<body>
+<div class="col-md-6 col-md-offset-3">
+<h1>Covid Data {{userName}}</h1>
+<form method="post" action="/">
+    <input type="text" name="country" placeholder="enter_name">
+    <button type="submit">SUBMIT</button>
+</form>
+    <div class="col-md-6 col-md-offset-3">
+        <h2>Name of Place : {{data.place}}</h2>
+        <h3>Total Cases Confirmed: {{data.confirmed}}</h3>
+        <h3>Total Deaths: {{data.ded}}</h3>
+</div>
+</div>
+</body>
+</html>
